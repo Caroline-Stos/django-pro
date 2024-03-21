@@ -1,7 +1,7 @@
+from django.shortcuts import render
 from .forms import AddForm
 from .models import Contact
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
 
 def show(request):
     """ 
