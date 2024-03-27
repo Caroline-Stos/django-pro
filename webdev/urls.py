@@ -6,4 +6,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.show),
     path("add/", views.add),
+    path("view-contact/<contact_id>", views.view_contact)
 ] 

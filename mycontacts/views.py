@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import AddForm
 from .models import Contact
 from django.http import HttpResponseRedirect
@@ -40,3 +40,15 @@ def add(request):
             return render(request, 'mycontacts/add.html')
     else:
         return render(request, 'mycontacts/add.html')
+
+def view_contact(request, contact_id):
+
+    django_form = AddForm(request.POST)
+    if django_form.is_valid():
+        # get_object_or_404
+        contact = Contact.objects.get(pk=contact_id)
+    return render(request, 'view_contact.html', {contact})
+
+# def edit_dts(request):
+    
+# def delete(request
