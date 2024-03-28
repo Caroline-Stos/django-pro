@@ -7,56 +7,62 @@ html{
 .email{
 	color: #0B6121;
 }
-.grid {
+.contact-list {
   		overflow: hidden;
 		padding: 2em 2em;
 		max-width: 76em;
 		margin: 0 auto;
+
+		display: block;
+		flex-direction: row;
+
 		}
-		.grid li {
+		.contact-list li {
 			
 			padding: 0 0.8em 1.3em ;
 		}
-		.grid li > div {
-		    border-bottom: 1.8px solid #cccccc;
-		    border-right: 1.4px solid #cccccc;
-		    border-left: 0.7px solid #cccccc;
+		.contact-list li > div {
+			border-radius: 2em;
+		    border-bottom: 2px solid #cccccc;
+		    border-right: 2px solid #cccccc;
+		    border-left: 0.6px solid #cccccc;
 		    border-top: 0.6px solid #cccccc;
       
 			background: #ffffff;
 			padding: 7em 2em;
 			text-align: center;
 		}
-		.grid li a {
+		.contact-list li a {
 			color: #000000;
 		}
 		
 		@media all and (min-width: 27em) {
-			.grid li {
+			.contact-list li {
 				width: 100%;
 				float: left;
 			}
 		}
 		
 		@media all and (min-width: 40em) {
-			.grid li {
+			.contact-list li {
 				width: 50%;
 			}
-			.grid li.wide {
+			.contact-list li.wide {
 				width: 100%;
 			}
 		}
 		@media all and (min-width: 60em) {
-			.grid li {
+			.contact-list li {
 				width: 33%;
 			}
-			.grid li.wide {
+			.contact-list li.wide {
 				width: 100%;
 			}
 		}
 .container-show{
 	padding-top: 10%;
 	padding-bottom: 7%;
+
 }
 
 .js-global-header-scrolling {
